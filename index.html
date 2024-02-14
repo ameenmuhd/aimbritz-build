@@ -1,130 +1,1299 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Vizox | Visa & Immigrations HTML Template | Home Page 03</title>
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/pop-up.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <!--[if lt IE 9
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vizox | Visa & Immigrations HTML Template | Home Page 03</title>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/pop-up.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <style>
+    .modal-backdrop {
+      z-index: -1;
+    }
+  </style>
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <!--[if lt IE 9
       ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
     ><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-  </head>
+  <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
 
-  <body>
-    <div class="page-wrapper">
-      <!-- Preloader -->
-      <div class="preloader"></div>
-      <!-- Main Header-->
-      <header class="main-header header-style-three">
-        <!-- Main box -->
-        <div class="main-box">
-          <div class="logo-box">
+<body>
+  <div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!-- Main Header-->
+    <header class="main-header header-style-three">
+      <!-- Main box -->
+      <div class="main-box">
+        <div class="logo-box">
+          <div class="logo">
+            <a href="index.html"><img src="images/aimbritz-logo.png" width="150px" alt="" title="Tronis" /></a>
+          </div>
+        </div>
+        <!--Nav Box-->
+        <div class="nav-outer">
+          <nav class="nav main-menu">
+            <ul class="navigation">
+              <li class="current">
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="page-about.html">About Us</a>
+              </li>
+              <li>
+                <a href="page-team.html">Our Team</a>
+              </li>
+              <li><a href="page-contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Main Menu End-->
+        </div>
+        <div class="outer-box">
+          <a href="tel:+92(8800)9806" class="info-btn">
+            <i class="icon fa fa-phone"></i>
+            <small>Call Anytime</small><br />
+            +91 9747277233
+          </a>
+          <div class="ui-btn-outer">
+            <button class="ui-btn ui-btn search-btn">
+              <span class="icon lnr lnr-icon-search"></span>
+            </button>
+          </div>
+          <!-- Mobile Nav toggler -->
+          <div class="mobile-nav-toggler">
+            <span class="icon lnr-icon-bars"></span>
+          </div>
+        </div>
+      </div>
+      <!-- End Main Box -->
+      <!-- Mobile Menu  -->
+      <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        <nav class="menu-box">
+          <div class="upper-box">
+            <div class="nav-logo">
+              <a href="index.html"><img src="images/logo.png" alt="" title="" /></a>
+            </div>
+            <div class="close-btn"><i class="icon fa fa-times"></i></div>
+          </div>
+          <ul class="navigation clearfix">
+            <!--Keep This Empty / Menu will come through Javascript-->
+          </ul>
+          <ul class="contact-list-one">
+            <li>
+              <!-- Contact Info Box -->
+              <div class="contact-info-box">
+                <i class="icon lnr-icon-phone-handset"></i>
+                <span class="title">Call Now</span>
+                <a href="tel:+92880098670">+92 (8800) - 98670</a>
+              </div>
+            </li>
+            <li>
+              <!-- Contact Info Box -->
+              <div class="contact-info-box">
+                <span class="icon lnr-icon-envelope1"></span>
+                <span class="title">Send Email</span>
+                <a href="mailto:help@company.com">help@company.com</a>
+              </div>
+            </li>
+            <li>
+              <!-- Contact Info Box -->
+              <div class="contact-info-box">
+                <span class="icon lnr-icon-clock"></span>
+                <span class="title">Send Email</span>
+                Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+              </div>
+            </li>
+          </ul>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End Mobile Menu -->
+      <!-- Header Search -->
+      <div class="search-popup">
+        <span class="search-back-drop"></span>
+        <button class="close-search">
+          <span class="fa fa-times"></span>
+        </button>
+        <div class="search-inner">
+          <form method="post" action="index.html">
+            <div class="form-group">
+              <input type="search" name="search-field" value="" placeholder="Search..." required="" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- End Header Search -->
+      <!-- Sticky Header  -->
+      <div class="sticky-header">
+        <div class="auto-container">
+          <div class="inner-container">
+            <!--Logo-->
             <div class="logo">
-              <a href="index.html"
-                ><img
-                  src="images/aimbritz-logo.png"
-                  width="150px"
-                  alt=""
-                  title="Tronis"
-              /></a>
+              <a href="index.html" title=""><img src="images/aimbritz-logo.png" alt="" title="" /></a>
             </div>
-          </div>
-          <!--Nav Box-->
-          <div class="nav-outer">
-            <nav class="nav main-menu">
-              <ul class="navigation">
-                <li class="current">
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                   <a href="page-about.html">About Us</a>
-                </li>
-                <li>
-                  <a href="page-team.html">Our Team</a>
-                </li>
-                <li><a href="page-contact.html">Contact</a></li>
-              </ul>
-            </nav>
-            <!-- Main Menu End-->
-          </div>
-          <div class="outer-box">
-            <a href="tel:+92(8800)9806" class="info-btn">
-              <i class="icon fa fa-phone"></i>
-              <small>Call Anytime</small><br />
-              +91 9747277233
-            </a>
-            <div class="ui-btn-outer">
-              <button class="ui-btn ui-btn search-btn">
-                <span class="icon lnr lnr-icon-search"></span>
-              </button>
-            </div>
-            <!-- Mobile Nav toggler -->
-            <div class="mobile-nav-toggler">
-              <span class="icon lnr-icon-bars"></span>
+            <!--Right Col-->
+            <div class="nav-outer">
+              <!-- Main Menu -->
+              <nav class="main-menu">
+                <div class="navbar-collapse show collapse clearfix">
+                  <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                  </ul>
+                </div>
+              </nav>
+              <!-- Main Menu End-->
+              <!--Mobile Navigation Toggler-->
+              <div class="mobile-nav-toggler">
+                <span class="icon lnr-icon-bars"></span>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End Main Box -->
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-          <div class="menu-backdrop"></div>
-          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-          <nav class="menu-box">
-            <div class="upper-box">
-              <div class="nav-logo">
-                <a href="index.html"
-                  ><img src="images/logo.png" alt="" title=""
-                /></a>
+      </div>
+      <!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+    <!-- Banner Section Two-->
+    <section class="banner-section-two">
+      <div class="banner-carousel owl-carousel owl-theme">
+        <!-- Slide Item -->
+        <div class="slide-item">
+          <div class="bg-image" style="
+                background-image: url(https://img.freepik.com/premium-vector/black-banner-yellow-light-background_33869-664.jpg);
+              "></div>
+          <div class="auto-container">
+            <div class="content-box">
+              <span class="sub-title animate-1">Solutions for all type of visas</span>
+              <div class="inner">
+                <h1 class="title animate-2">Aim britz</h1>
+                <h3 class="animate-3">A Dream That You Can Built With Us</h3>
+                <div class="btn-box animate-4">
+                  <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Explore
+                      now</span></a>
+                </div>
               </div>
-              <div class="close-btn"><i class="icon fa fa-times"></i></div>
             </div>
-            <ul class="navigation clearfix">
-              <!--Keep This Empty / Menu will come through Javascript-->
-            </ul>
-            <ul class="contact-list-one">
-              <li>
-                <!-- Contact Info Box -->
-                <div class="contact-info-box">
-                  <i class="icon lnr-icon-phone-handset"></i>
-                  <span class="title">Call Now</span>
-                  <a href="tel:+92880098670">+92 (8800) - 98670</a>
+          </div>
+        </div>
+        <!-- Slide Item -->
+        <div class="slide-item">
+          <div class="bg-image" style="background-image: url(images/slide4.jpg)"></div>
+          <div class="auto-container">
+            <div class="content-box">
+              <span class="sub-title animate-1">Visa Assistance</span>
+              <div class="inner">
+                <h1 class="title animate-2">Visa Aid</h1>
+                <h3 class="animate-3">
+                  Aim Britz offers a streamlined approach and university
+                  connections for successful scholarship applications.
+                </h3>
+                <div class="btn-box animate-4">
+                  <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Explore
+                      now</span></a>
                 </div>
-              </li>
-              <li>
-                <!-- Contact Info Box -->
-                <div class="contact-info-box">
-                  <span class="icon lnr-icon-envelope1"></span>
-                  <span class="title">Send Email</span>
-                  <a href="mailto:help@company.com">help@company.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--END Banner Section Two -->
+    <!-- Features Section Two -->
+    <section class="features-section-three">
+      <div class="row g-0">
+        <!-- Feature Block Three -->
+        <div class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp">
+          <div class="inner-box">
+            <div class="content-box">
+              <i class="icon flaticon-passport-12"></i>
+              <span class="sub-title">Study with Scholarship</span>
+              <h4 class="title">
+                <a href="#">Our international education experts will be more than happy
+                  to guide you through Scholarship Process</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Block Three -->
+        <div class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="400ms">
+          <div class="inner-box">
+            <div class="content-box">
+              <i class="icon flaticon-group"></i>
+              <span class="sub-title">UK graduated experts</span>
+              <h4 class="title">
+                <a href="#">The Venture Aim Britz is launched by a group of UK
+                  Graduates and Residents</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- Feature Block Three -->
+        <div class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="800ms">
+          <div class="inner-box">
+            <div class="content-box">
+              <i class="icon flaticon-life-insurance"></i>
+              <span class="sub-title">UK & Regional Offices</span>
+              <h4 class="title">
+                <a href="#">We have an amazing crew who is working 24/7 in India and UK
+                  <br /><br /><br /></a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Features Section-->
+    <!-- About Section Five -->
+    <section class="about-section-five">
+      <div class="auto-container">
+        <div class="anim-icons">
+          <span class="icon icon-object-3"></span>
+        </div>
+        <div class="row">
+          <div class="content-column col-lg-6 col-md-12 order-2 wow fadeInRight" data-wow-delay="600ms">
+            <div class="inner-column">
+              <div class="sec-title">
+                <span class="sub-title">About our company</span>
+                <h2>Welcome to Aim Britz</h2>
+                <div class="text">
+                  Leading education consultant Aim Britz, with years of experience, provides unmatched knowledge and
+                  insights. Our committed team, made up of experts with UK educations, makes it easier to get into
+                  prestigious international colleges. We put the needs of our students first, giving them access to
+                  top-notch international education options with affordable tuition and scholarships. Our Kerala-based
+                  UK study abroad consultants serve as a liaison between students and universities, guaranteeing a
+                  smooth transfer to tertiary education.
                 </div>
-              </li>
-              <li>
-                <!-- Contact Info Box -->
-                <div class="contact-info-box">
-                  <span class="icon lnr-icon-clock"></span>
-                  <span class="title">Send Email</span>
-                  Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+              </div>
+              <div class="btn-box">
+                <a href="tel:+92(8800)9806" class="info-btn">
+                  <i class="icon fa fa-phone"></i>
+                  <small>Call Anytime</small> +91 9747277233
+                </a>
+                <a href="page-contact.html" class="theme-btn btn-style-one"><span class="btn-title">Contact
+                    us</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12">
+            <div class="inner-column wow fadeInLeft">
+              <figure class="image overlay-anim wow fadeInUp">
+                <img
+                  src="images/background/front-view-male-student-striped-shirt-wearing-yellow-backpack-holding-round-little-globe-blue-wall.jpg"
+                  alt="" />
+              </figure>
+              <div class="experience">
+                <div class="inner">
+                  <i class="icon flaticon-increase"></i>
+                  <div class="text"><strong>36+</strong> Work Experience</div>
                 </div>
-              </li>
-            </ul>
-            <ul class="social-links">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Emd About Section Five -->
+    <!-- Countries Section Three -->
+    <section class="countries-section-three">
+      <div class="anim-icons">
+        <span class="icon icon-object-1"></span>
+      </div>
+      <div class="outer-box pt-0">
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <span class="sub-title">Countries we offer</span>
+            <h2>Premier Academic Hubs</h2>
+          </div>
+          <!--  Countries Carousel -->
+          <div class="row">
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-uk.jpg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>UK</a>
+                  </h5>
+                  <div class="text">Take advantage of low tuition, excellent scholarships, and stimulating academics in
+                    the UK.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-usa.jpg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>United States</a>
+                  </h5>
+                  <div class="text">Discover elite education in the USA, a country recognised for its diversified
+                    campuses and esteemed colleges.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-aus.jpg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Australia</a>
+                  </h5>
+                  <div class="text">Start your academic adventure in Australia, a country known for its top-notch
+                    universities and active student population.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-canada.jpeg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Canada</a>
+                  </h5>
+                  <div class="text">Experience a warm, inclusive environment while receiving a top-notch education in
+                    Canada. <br></br></div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-new.jpeg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Newzealand</a>
+                  </h5>
+                  <div class="text">Explore the bright student communities and varied universities of New Zealand to
+                    learn about academic greatness.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-ireland.jpeg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Ireland</a>
+                  </h5>
+                  <div class="text">Explore Ireland's welcoming student community and rich cultural legacy. <br></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-ger.jpeg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Germany</a>
+                  </h5>
+                  <div class="text">Discover the world-class engineering programmes and cutting-edge research
+                    possibilities in Germany.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-fra.jpeg" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>France</a>
+                  </h5>
+                  <div class="text">FDiscover the thriving cultural scene and top-notch culinary schools in France.
+                    <br></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-nethe.png" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Netherlands</a>
+                  </h5>
+                  <div class="text">Learn about the diverse society and highly regarded universities in the Netherlands.
+                    <br></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-fin.png" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Finland</a>
+                  </h5>
+                  <div class="text">Take in Finland's breathtaking natural scenery and state-of-the-art technological
+                    programmes. <br></br></div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-swe.png" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Sweden</a>
+                  </h5>
+                  <div class="text">Examine the progressive educational system and excellent standard of living in
+                    Sweden.</div>
+                </div>
+              </div>
+            </div>
+            <!-- Country Block Three-->
+            <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
+              <div class="inner-box">
+                <div class="content">
+                  <div class="flag">
+                    <img src="images/resource/flag-nor.png" alt="" />
+                  </div>
+                  <h5 class="title">
+                    <a>Norway</a>
+                  </h5>
+                  <div class="text">Experience Norway's striking natural beauty and commitment to sustainability.
+                    <br></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-text">
+            TOP CHOICE FOR STUDENTS & EDUCATIONAL CONSULTANTS WITH 100% SUCCESS RECORD.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Countries Section -->
+    <!-- Call to Action Two -->
+    <section class="call-to-action-two pull-up" style="background-image: url(./images/background/-PJVYsw8jlA-HD.jpg)">
+      <div class="auto-container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="title-box">
+              <!-- <h2 class="title">We Counselling Students <br>to Get Study Visa</h2> -->
+              <a href="https://www.youtube.com/@AimbritzStudyAbroad/featured"
+                class="theme-btn btn-style-one light"><span class="btn-title">Watch now</span></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="video-box">
+              <div class="inner">
+                <a href="https://youtu.be/-PJVYsw8jlA?si=qyCPEqXsqKVvZuJd"
+                  class="play-now-two alternate lightbox-image"><i class="icon fa fa-play"></i></a>
+                <img src="images/icons/icon-arrow.png" alt="" class="arrow" />
+                <h4 class="title style-font">Play Video</h4>
+                <span class="sub-title">Watch videos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Call to Action -->
+    <!-- Services Section -->
+    <section class="services-section-two">
+      <div class="anim-icons">
+        <span class="icon icon-object-2"></span>
+        <span class="icon icon-object-3"></span>
+      </div>
+      <div class="auto-container">
+        <div class="sec-title">
+          <div class="row">
+            <div class="col-lg-7">
+              <span class="sub-title">What do we offer</span>
+              <h2>Outstanding Immigration <br />Visa Services.</h2>
+            </div>
+            <div class="col-lg-5">
+              <div class="text">
+                Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem is simply free text quis bibendum.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/22428594_554.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box">
+                  <i class="icon fa fa-graduation-cap"></i>
+                </div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Career counselling</a>
+                </h5>
+                <div class="text">
+                  High-quality, personalised career counselling to help you
+                  create the best plan possible based on your interests.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/8513914_3936520.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box">
+                  <i class="icon fa fa-plane-departure"></i>
+                </div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Predeparture Briefing</a>
+                </h5>
+                <div class="text">
+                  Students Succeed with Our Assistance — Connect via Phone,
+                  Whatsapp, or Skype for Journeys that Boost Confidence."
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px"
+                      src="images/background/26877048_Happy cartoon college or university students holding diplomas.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-book"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Scholarship Guidance</a>
+                </h5>
+                <div class="text">
+                  With Special Resources, Aim Britz Methodically Leads You on
+                  a Step-by-Step Application Journey.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/10613452_10142.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-globe"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Visa Assistance</a>
+                </h5>
+                <div class="text">
+                  Possessing strong international connections and professional
+                  guidance, Aim Britz streamlines a difficult process.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/4332402_18950.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box">
+                  <i class="icon fa fa-landmark"></i>
+                </div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Education Loan</a>
+                </h5>
+                <div class="text">
+                  Aim Britz simplifies student loan selection, documentation,
+                  institutions, and applications.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/5576177_21513.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box">
+                  <i class="icon fa fa-university"></i>
+                </div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Admission Guidance</a>
+                </h5>
+                <div class="text">
+                  Put Your Trust in Our Experts for Tailored Admissions
+                  Guidance Based on Your Profile and Preferences
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/6846611_27916.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box">
+                  <i class="icon fa fa-university"></i>
+                </div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Free Dependent and Child Visa</a>
+                </h5>
+                <div class="text">
+                  Bringing Family to the UK: Make an informed plan, go alone
+                  at first, and get a free dependent visa with our help.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px"
+                      src="images/background/21684206_Passenger going through metal body scanner with luggage on belt.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Airport Pickup</a>
+                </h5>
+                <div class="text">
+                  Your Trusted UK Airport Drop Service – Serving All London
+                  Airports, Ensuring Comfortable and Convenient Rides.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px"
+                      src="images/background/19212494_Cartoon bell boy helping female guest carry luggage.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Accomodation Assist</a>
+                </h5>
+                <div class="text">
+                  Excellent Housing for Foreign Students in the UK: Safe,
+                  Practical, and Wide-Ranging Selections in London and Across.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/6161033_2350.jpg" alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Partime Assist</a>
+                </h5>
+                <div class="text">
+                  Discover London, Get a Part-Time Job with Arrange a Pastime
+                  Job—A World-Class City with a thriving nightlife.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px"
+                      src="images/background/12291285_Startup managers presenting and analyzing sales growth chart.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Financial Assist</a>
+                </h5>
+                <div class="text">
+                  Financial Relief Made Accessible: The Secure and
+                  Low-Interest Finance Support Service for Short-Term Living
+                  Expenses.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px"
+                      src="images/background/23306556_1911.i305.029.P.m005.c20.lawyer justice law set-09.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>Work Permit Conversion</a>
+                </h5>
+                <div class="text">
+                  With Our Assistance, Convert to a Skilled Worker Visa -
+                  Children and Partners May Apply Separately or Concurrently.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Block -->
+          <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+            <div class="inner-box">
+              <div class="image-box">
+                <figure class="image">
+                  <a><img style="height: 230px" src="images/background/dad-son-standing-counter-airport_74855-10574.jpg"
+                      alt="" /></a>
+                </figure>
+                <div class="icon-box"><i class="icon fa fa-school"></i></div>
+              </div>
+              <div class="content-box">
+                <h5 class="title">
+                  <a>PR Assist</a>
+                </h5>
+                <div class="text">
+                  Obtain Permanent Residency in the UK, Only for Those Without
+                  a Natural Right to Reside There.
+                </div>
+                <!-- <a class="read-more"
+                    >Read More <i class="fa fa-long-arrow-alt-right"></i
+                  ></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section-->
+
+    <!-- Why Choose Us Three -->
+    <section class="why-choose-us-three">
+      <div class="anim-icons">
+        <span class="icon icon-object-1"></span>
+      </div>
+      <div class="auto-container">
+        <div class="row">
+          <!-- Content Column -->
+          <div class="content-column col-lg-6 col-md-12">
+            <div class="inner-column wow fadeInRight">
+              <div class="sec-title">
+                <i class="sub-title">/ Why Aim Britz?</i>
+                <h2>Your Ultimate Study Abroad Guide</h2>
+                <div class="bold-text">
+                  Aim Britz is one of the top Study Abroad consultants in
+                  Kerala that guides and consults students all around the
+                  globe. We offer a great opportunity for students to study in
+                  UK without ILETS and with low tuition fees.
+                </div>
+                <div class="text">
+                  Your #1 Global Education Handbook for Life-Changing Academic
+                  Experiences
+                </div>
+              </div>
+              <ul class="list-style-three two-column">
+                <li>Consultations with experts.</li>
+                <li>Excellence in Personalised Guidance.</li>
+                <li>Demonstrated Success History.</li>
+                <li>Focused on Placement in UK Universities.</li>
+              </ul>
+              <a href="page-about.html" class="theme-btn btn-style-one"><span class="btn-title">Explore now</span></a>
+            </div>
+          </div>
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 col-md-12 col-sm-12">
+            <div class="inner-column">
+              <div class="image-box">
+                <figure class="bg-image">
+                  <img src="https://via.placeholder.com/532x544" alt="" />
+                </figure>
+                <figure class="image">
+                  <img src="images/background/13561931_5274708.jpg" alt="" />
+                </figure>
+                <div class="info-box">
+                  <i class="icon flaticon-licensing"></i>
+                  <span class="count">1000+</span>
+                  <div class="text">
+                    We Process Student Visa’s only in 20 Days
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-box-three">
+          <div class="inner-box">
+            <div class="title-column">
+              <figure class="image">
+                <img src="images/icons/g3.png" alt="" />
+              </figure>
+              <h3 class="title">
+                Asia’s First in Asia Book of Records and India Book of Records
+              </h3>
+            </div>
+            <div class="text-column">
+              <div class="text">
+                Creating a Revolutionary Step in the Field of Educational
+                Consulting and Being Listed in the Asia and India Books of
+                Records
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Why Choose Us -->
+    <!-- Fun Fact Section Two -->
+    <section class="fun-fact-section-two">
+      <div class="auto-container">
+        <div class="fact-counter pull-up">
+          <div class="row">
+            <!-- Counter block Two-->
+            <div class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
+              <div class="inner">
+                <i class="icon flaticon-passport-16"></i>
+                <div class="count-box">
+                  <span class="count-text" data-speed="3000" data-stop="100">0</span>+
+                </div>
+                <h6 class="counter-title">
+                  Universities & Institutes Tie-ups
+                </h6>
+              </div>
+            </div>
+
+            <!--Counter block Two-->
+            <div class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+              <div class="inner">
+                <i class="icon flaticon-group"></i>
+                <div class="count-box">
+                  <span class="count-text" data-speed="3000" data-stop="100">0</span>+
+                </div>
+                <h6 class="counter-title">
+                  Registered students for next intake
+                </h6>
+              </div>
+            </div>
+
+            <!--Counter block Two-->
+            <div class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+              <div class="inner">
+                <i class="icon flaticon-life-insurance"></i>
+                <div class="count-box">
+                  <span class="count-text" data-speed="3000" data-stop="1000">1000</span>+
+                </div>
+                <h6 class="counter-title">Satisfied students</h6>
+              </div>
+            </div>
+
+            <!--Counter block Two-->
+            <div class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+              <div class="inner">
+                <i class="icon flaticon-cooperation"></i>
+                <div class="count-box">
+                  <span class="count-text" data-speed="3000" data-stop="5">0</span>*
+                </div>
+                <h6 class="counter-title">Rated on social media</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section Three-->
+    <section class="testimonial-section-three">
+      <div class="bg-layer"></div>
+      <div class="auto-container">
+        <div class="row">
+          <div class="title-column col-lg-4 col-md-12">
+            <div class="sec-title">
+              <span class="sub-title">Our testimonials</span>
+              <h2>What Our Students Say.</h2>
+            </div>
+          </div>
+          <div class="testimonial-column col-lg-8 col-md-12">
+            <div class="carousel-outer">
+              <div class="testimonial-carousel-two owl-carousel owl-theme">
+                <!-- Testimonial Block Three -->
+                <div class="testimonial-block-three">
+                  <div class="inner-box">
+                    <div class="image-box">
+                      <figure class="image">
+                        <img src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.50-PM-92x92-1.jpeg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="content-box">
+                      <div class="text">
+                        Aimbritz help me out to get into my dream building
+                      </div>
+                      <div class="info-box">
+                        <h5 class="name">Aiswarya S Nair</h5>
+                        <span class="designation">University of Huddersfield</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Block Three -->
+                <div class="testimonial-block-three">
+                  <div class="inner-box">
+                    <div class="image-box">
+                      <figure class="image">
+                        <img src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.50-PM-1-92x92-1.jpeg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="content-box">
+                      <div class="text">
+                        It was a great journey with AimBritz throughout my
+                        admission process
+                      </div>
+                      <div class="info-box">
+                        <h5 class="name">Mohammed Ashik</h5>
+                        <span class="designation">University of aTeeside</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Block Three -->
+                <div class="testimonial-block-three">
+                  <div class="inner-box">
+                    <div class="image-box">
+                      <figure class="image">
+                        <img src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.51-PM-92x92-1.jpeg" alt="" />
+                      </figure>
+                    </div>
+                    <div class="content-box">
+                      <div class="text">
+                        AimBritz helped us in finding partimes and
+                        accommodation even though we are not their candidates.
+                      </div>
+                      <div class="info-box">
+                        <h5 class="name">Aleena Ashok and friends Burnel</h5>
+                        <span class="designation">UK</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Testimonial Block Three -->
+                <div class="testimonial-block-three">
+                  <div class="inner-box">
+                    <div class="image-box">
+                      <figure class="image">
+                        <img src="images/testimonials/WhatsApp Image 2024-02-06 at 12.05.42 PM 12.55.17 PM.jpeg"
+                          alt="" />
+                      </figure>
+                    </div>
+                    <div class="content-box">
+                      <div class="text">
+                        Completed MBA in project management at UEL. Excellent support from AimBritz team. Highly
+                        recommend for educational goals.
+                      </div>
+                      <div class="info-box">
+                        <h5 class="name">OLEENA JOS CHIRAMMEL</h5>
+                        <span class="designation">UK</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section -->
+    <section class="clients-section style-three">
+      <div class="auto-container">
+        <!-- Sponsors Outer -->
+        <div class="sponsors-outer">
+          <!--clients carousel-->
+          <ul class="clients-carousel owl-carousel owl-theme">
+            <li class="slide-item">
+              <img src="images/university/DMU-Logo_847x300_acf_cropped.jpg" alt="" />
+            </li>
+            <li class="slide-item">
+              <img src="images/university/E4BA-5D49-44C5-8A32-856E-1024x535.png" alt="" />
+            </li>
+            <li class="slide-item">
+              <img src="images/university/PR2-1024x359.jpg" alt="" />
+            </li>
+            <li class="slide-item">
+              <img src="images/university/Teesside-University-logo.jpg" alt="" />
+            </li>
+            <li class="slide-item">
+              <img src="images/university/University-of-Greenwich-logo.jpg" alt="" />
+            </li>
+            <li class="slide-item">
+              <img src="images/university/uws-1024x576.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--End Clients Section -->
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <div class="auto-container">
+        <div class="upper-box">
+          <div class="logo">
+            <a href="index.html"><img src="images/aimbritz-logo.png" style="width: 150px;" alt="" /></a>
+          </div>
+          <div class="subscribe-form">
+            <h5 class="title">Subscribe to Newsletter</h5>
+            <form method="post" action="#">
+              <div class="form-group">
+                <input type="email" name="email" class="email" value="" placeholder="Email Address" required="" />
+                <button type="button" class="theme-btn btn-style-one">
+                  <span class="btn-title">Subscribe</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--Widgets Section-->
+      <div class="widgets-section">
+        <div class="auto-container">
+          <div class="row">
+            <!--Footer Column-->
+            <div class="footer-column col-xl-3 col-lg-4">
+              <div class="footer-widget about-widget">
+                <h5 class="widget-title">Our Offices</h5>
+                <div class="text">
+                  Aim Britz Study Abroad 323 Annas Arcade, Trivandrum , 695001, +919747277233
+                </div>
+                <div class="text">
+                  Aim Britz Study Abroad 3rd floor, BIFA Towers, Koonamthai,
+                  Edappaly, Kochi, +918877889942
+                </div>
+                <div class="text">
+                  Aim Britz Study Abroad 43 High Street, London, UK, +447417391291
+                </div>
+                <ul class="contact-info">
+                  <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:needhelp@potisen.com">info@aimbritz.com</a><br />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--Footer Column-->
+            <div class="footer-column col-xl-6 col-lg-8 col-md-12 mb-0">
+              <div class="footer-widget links-widget">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h5 class="widget-title">Explore</h5>
+                    <ul class="user-links">
+                      <li><a href="/page-about.html">About Company</a></li>
+                      <li><a href="/page-team.html">Meet the Team</a></li>
+                      <li><a href="/page-contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h5 class="widget-title">Visa</h5>
+                    <ul class="user-links">
+                      <li><a href="#">Students Visa</a></li>
+                      <li><a href="#">Spouse Visa</a></li>
+                      <li><a href="#">Travel Visa</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h5 class="widget-title">Services</h5>
+                    <ul class="user-links">
+                      <li><a href="#">PR Applicants</a></li>
+                      <li><a href="#">Visa Consultancy</a></li>
+                      <li><a href="#">Travel Insurance</a></li>
+                      <li><a href="#">Abroad Study</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Footer Column-->
+            <div class="footer-column col-xl-3 col-lg-4 col-md-6">
+              <div class="footer-widget gallery-widget">
+                <h5 class="widget-title">Gallery</h5>
+                <div class="widget-content">
+                  <div class="outer clearfix">
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                    <figure class="image">
+                      <a href="#"><img src="https://via.placeholder.com/80x80" alt="" /></a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer Bottom-->
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="inner-container">
+            <div class="copyright-text">
+              &copy; Copyright 2023 by <a href="index.html">Company.com</a>
+            </div>
+            <ul class="social-icon-two">
               <li>
                 <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
               </li>
               <li>
                 <a href="#"><i class="fab fa-pinterest"></i></a>
@@ -133,1324 +1302,86 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-        <!-- End Mobile Menu -->
-        <!-- Header Search -->
-        <div class="search-popup">
-          <span class="search-back-drop"></span>
-          <button class="close-search">
-            <span class="fa fa-times"></span>
-          </button>
-          <div class="search-inner">
-            <form method="post" action="index.html">
-              <div class="form-group">
-                <input
-                  type="search"
-                  name="search-field"
-                  value=""
-                  placeholder="Search..."
-                  required=""
-                />
-                <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </footer>
+    <!--End Main Footer -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModallg"
+      data-bs-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"><span class="sub-title">Send us email</span></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Contact Form -->
+            <form id="gform" name="gform" class="" method="post">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <input name="form_email" class="form-control required email" type="email"
+                      placeholder="Enter Email" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject" />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone" />
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <textarea name="form_message" class="form-control required" rows="7"
+                  placeholder="Enter Message"></textarea>
+              </div>
+              <div class="mb-3">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">
+                  <span class="btn-title">Send message</span>
+                </button>
+                <button type="reset" class="theme-btn btn-style-one bg-theme-color5">
+                  <span class="btn-title">Reset</span>
+                </button>
               </div>
             </form>
           </div>
         </div>
-        <!-- End Header Search -->
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-          <div class="auto-container">
-            <div class="inner-container">
-              <!--Logo-->
-              <div class="logo">
-                <a href="index.html" title=""
-                  ><img src="images/aimbritz-logo.png" alt="" title=""
-                /></a>
-              </div>
-              <!--Right Col-->
-              <div class="nav-outer">
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                  <div class="navbar-collapse show collapse clearfix">
-                    <ul class="navigation clearfix">
-                      <!--Keep This Empty / Menu will come through Javascript-->
-                    </ul>
-                  </div>
-                </nav>
-                <!-- Main Menu End-->
-                <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler">
-                  <span class="icon lnr-icon-bars"></span>
-                </div>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModallg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"><span class="sub-title">Upcoming Events</span></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/WhatsApp Image 2024-02-14 at 1.46.05 PM.jpeg"
+              class="img-fluid" alt="">
           </div>
         </div>
-        <!-- End Sticky Menu -->
-      </header>
-      <!--End Main Header -->
-      <!-- Banner Section Two-->
-      <section class="banner-section-two">
-        <div class="banner-carousel owl-carousel owl-theme">
-          <!-- Slide Item -->
-          <div class="slide-item">
-            <div
-              class="bg-image"
-              style="
-                background-image: url(https://img.freepik.com/premium-vector/black-banner-yellow-light-background_33869-664.jpg);
-              "
-            ></div>
-            <div class="auto-container">
-              <div class="content-box">
-                <span class="sub-title animate-1"
-                  >Solutions for all type of visas</span
-                >
-                <div class="inner">
-                  <h1 class="title animate-2">Aim britz</h1>
-                  <h3 class="animate-3">A Dream That You Can Built With Us</h3>
-                  <div class="btn-box animate-4">
-                    <a href="page-about.html" class="theme-btn btn-style-one"
-                      ><span class="btn-title">Explore now</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Slide Item -->
-          <div class="slide-item">
-            <div
-              class="bg-image"
-              style="background-image: url(images/slide4.jpg)"
-            ></div>
-            <div class="auto-container">
-              <div class="content-box">
-                <span class="sub-title animate-1">Visa Assistance</span>
-                <div class="inner">
-                  <h1 class="title animate-2">Visa Aid</h1>
-                  <h3 class="animate-3">
-                    Aim Britz offers a streamlined approach and university
-                    connections for successful scholarship applications.
-                  </h3>
-                  <div class="btn-box animate-4">
-                    <a href="page-about.html" class="theme-btn btn-style-one"
-                      ><span class="btn-title">Explore now</span></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--END Banner Section Two -->
-      <!-- Features Section Two -->
-      <section class="features-section-three">
-        <div class="row g-0">
-          <!-- Feature Block Three -->
-          <div
-            class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
-          >
-            <div class="inner-box">
-              <div class="content-box">
-                <i class="icon flaticon-passport-12"></i>
-                <span class="sub-title">Study with Scholarship</span>
-                <h4 class="title">
-                  <a href="#"
-                    >Our international education experts will be more than happy
-                    to guide you through Scholarship Process</a
-                  >
-                </h4>
-              </div>
-            </div>
-          </div>
-          <!-- Feature Block Three -->
-          <div
-            class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
-            data-wow-delay="400ms"
-          >
-            <div class="inner-box">
-              <div class="content-box">
-                <i class="icon flaticon-group"></i>
-                <span class="sub-title">UK graduated experts</span>
-                <h4 class="title">
-                  <a href="#"
-                    >The Venture Aim Britz is launched by a group of UK
-                    Graduates and Residents</a
-                  >
-                </h4>
-              </div>
-            </div>
-          </div>
-          <!-- Feature Block Three -->
-          <div
-            class="feature-block-three col-xl-4 col-lg-6 col-md-12 wow fadeInUp"
-            data-wow-delay="800ms"
-          >
-            <div class="inner-box">
-              <div class="content-box">
-                <i class="icon flaticon-life-insurance"></i>
-                <span class="sub-title">UK & Regional Offices</span>
-                <h4 class="title">
-                  <a href="#"
-                    >We have an amazing crew who is working 24/7 in India and UK
-                    <br /><br /><br
-                  /></a>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Features Section-->
-      <!-- About Section Five -->
-      <section class="about-section-five">
-        <div class="auto-container">
-          <div class="anim-icons">
-            <span class="icon icon-object-3"></span>
-          </div>
-          <div class="row">
-            <div
-              class="content-column col-lg-6 col-md-12 order-2 wow fadeInRight"
-              data-wow-delay="600ms"
-            >
-              <div class="inner-column">
-                <div class="sec-title">
-                  <span class="sub-title">About our company</span>
-                  <h2>Welcome to Aim Britz</h2>
-                  <div class="text">
-                    Leading education consultant Aim Britz, with years of experience, provides unmatched knowledge and insights. Our committed team, made up of experts with UK educations, makes it easier to get into prestigious international colleges. We put the needs of our students first, giving them access to top-notch international education options with affordable tuition and scholarships. Our Kerala-based UK study abroad consultants serve as a liaison between students and universities, guaranteeing a smooth transfer to tertiary education.
-                  </div>
-                </div>
-                <div class="btn-box">
-                  <a href="tel:+92(8800)9806" class="info-btn">
-                    <i class="icon fa fa-phone"></i>
-                    <small>Call Anytime</small> +91 9747277233
-                  </a>
-                  <a href="page-contact.html" class="theme-btn btn-style-one"
-                    ><span class="btn-title">Contact us</span></a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Image Column -->
-            <div class="image-column col-lg-6 col-md-12">
-              <div class="inner-column wow fadeInLeft">
-                <figure class="image overlay-anim wow fadeInUp">
-                  <img src="images/background/front-view-male-student-striped-shirt-wearing-yellow-backpack-holding-round-little-globe-blue-wall.jpg" alt="" />
-                </figure>
-                <div class="experience">
-                  <div class="inner">
-                    <i class="icon flaticon-increase"></i>
-                    <div class="text"><strong>36+</strong> Work Experience</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Emd About Section Five -->
-      <!-- Countries Section Three -->
-      <section class="countries-section-three">
-        <div class="anim-icons">
-          <span class="icon icon-object-1"></span>
-        </div>
-        <div class="outer-box pt-0">
-          <div class="auto-container">
-            <div class="sec-title text-center">
-              <span class="sub-title">Countries we offer</span>
-              <h2>Premier Academic Hubs</h2>
-            </div>
-            <!--  Countries Carousel -->
-            <div class="row">
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-uk.jpg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>UK</a>
-                    </h5>
-                    <div class="text">Take advantage of low tuition, excellent scholarships, and stimulating academics in the UK.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-usa.jpg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>United States</a>
-                    </h5>
-                    <div class="text">Discover elite education in the USA, a country recognised for its diversified campuses and esteemed colleges.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-aus.jpg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Australia</a>
-                    </h5>
-                    <div class="text">Start your academic adventure in Australia, a country known for its top-notch universities and active student population.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-canada.jpeg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Canada</a>
-                    </h5>
-                    <div class="text">Experience a warm, inclusive environment while receiving a top-notch education in Canada. <br></br></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-new.jpeg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Newzealand</a>
-                    </h5>
-                    <div class="text">Explore the bright student communities and varied universities of New Zealand to learn about academic greatness.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-ireland.jpeg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Ireland</a>
-                    </h5>
-                    <div class="text">Explore Ireland's welcoming student community and rich cultural legacy. <br></br></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-ger.jpeg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Germany</a>
-                    </h5>
-                    <div class="text">Discover the world-class engineering programmes and cutting-edge research possibilities in Germany.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-fra.jpeg" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>France</a>
-                    </h5>
-                    <div class="text">FDiscover the thriving cultural scene and top-notch culinary schools in France. <br></br></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-nethe.png" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Netherlands</a>
-                    </h5>
-                    <div class="text">Learn about the diverse society and highly regarded universities in the Netherlands. <br></br></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-fin.png" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Finland</a>
-                    </h5>
-                    <div class="text">Take in Finland's breathtaking natural scenery and state-of-the-art technological programmes. <br></br></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-swe.png" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Sweden</a>
-                    </h5>
-                    <div class="text">Examine the progressive educational system and excellent standard of living in Sweden.</div>
-                  </div>
-                </div>
-              </div>
-              <!-- Country Block Three-->
-              <div class="country-block-three col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
-                  <div class="content">
-                    <div class="flag">
-                      <img src="images/resource/flag-nor.png" alt="" />
-                    </div>
-                    <h5 class="title">
-                      <a>Norway</a>
-                    </h5>
-                    <div class="text">Experience Norway's striking natural beauty and commitment to sustainability. <br></br></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-text">
-              TOP CHOICE FOR STUDENTS & EDUCATIONAL CONSULTANTS WITH 100% SUCCESS RECORD.
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--End Countries Section -->
-      <!-- Call to Action Two -->
-      <section
-        class="call-to-action-two pull-up"
-        style="background-image: url(./images/background/-PJVYsw8jlA-HD.jpg)"
-      >
-        <div class="auto-container">
-          <div class="row">
-            <div class="col-lg-8">
-              <div class="title-box">
-                <!-- <h2 class="title">We Counselling Students <br>to Get Study Visa</h2> -->
-                <a
-                  href="https://www.youtube.com/@AimbritzStudyAbroad/featured"
-                  class="theme-btn btn-style-one light"
-                  ><span class="btn-title">Watch now</span></a
-                >
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="video-box">
-                <div class="inner">
-                  <a
-                    href="https://youtu.be/-PJVYsw8jlA?si=qyCPEqXsqKVvZuJd"
-                    class="play-now-two alternate lightbox-image"
-                    ><i class="icon fa fa-play"></i
-                  ></a>
-                  <img src="images/icons/icon-arrow.png" alt="" class="arrow" />
-                  <h4 class="title style-font">Play Video</h4>
-                  <span class="sub-title">Watch videos</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Call to Action -->
-      <!-- Services Section -->
-      <section class="services-section-two">
-        <div class="anim-icons">
-          <span class="icon icon-object-2"></span>
-          <span class="icon icon-object-3"></span>
-        </div>
-        <div class="auto-container">
-          <div class="sec-title">
-            <div class="row">
-              <div class="col-lg-7">
-                <span class="sub-title">What do we offer</span>
-                <h2>Outstanding Immigration <br />Visa Services.</h2>
-              </div>
-              <div class="col-lg-5">
-                <div class="text">
-                  Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem is simply free text quis bibendum.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/22428594_554.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box">
-                    <i class="icon fa fa-graduation-cap"></i>
-                  </div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Career counselling</a>
-                  </h5>
-                  <div class="text">
-                    High-quality, personalised career counselling to help you
-                    create the best plan possible based on your interests.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/8513914_3936520.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box">
-                    <i class="icon fa fa-plane-departure"></i>
-                  </div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a
-                      >Predeparture Briefing</a
-                    >
-                  </h5>
-                  <div class="text">
-                    Students Succeed with Our Assistance — Connect via Phone,
-                    Whatsapp, or Skype for Journeys that Boost Confidence."
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/26877048_Happy cartoon college or university students holding diplomas.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-book"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Scholarship Guidance</a>
-                  </h5>
-                  <div class="text">
-                    With Special Resources, Aim Britz Methodically Leads You on
-                    a Step-by-Step Application Journey.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/10613452_10142.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-globe"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Visa Assistance</a>
-                  </h5>
-                  <div class="text">
-                    Possessing strong international connections and professional
-                    guidance, Aim Britz streamlines a difficult process.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/4332402_18950.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box">
-                    <i class="icon fa fa-landmark"></i>
-                  </div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Education Loan</a>
-                  </h5>
-                  <div class="text">
-                    Aim Britz simplifies student loan selection, documentation,
-                    institutions, and applications.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/5576177_21513.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box">
-                    <i class="icon fa fa-university"></i>
-                  </div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Admission Guidance</a>
-                  </h5>
-                  <div class="text">
-                    Put Your Trust in Our Experts for Tailored Admissions
-                    Guidance Based on Your Profile and Preferences
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/6846611_27916.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box">
-                    <i class="icon fa fa-university"></i>
-                  </div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a
-                      >Free Dependent and Child Visa</a
-                    >
-                  </h5>
-                  <div class="text">
-                    Bringing Family to the UK: Make an informed plan, go alone
-                    at first, and get a free dependent visa with our help.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/21684206_Passenger going through metal body scanner with luggage on belt.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Airport Pickup</a>
-                  </h5>
-                  <div class="text">
-                    Your Trusted UK Airport Drop Service – Serving All London
-                    Airports, Ensuring Comfortable and Convenient Rides.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/19212494_Cartoon bell boy helping female guest carry luggage.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Accomodation Assist</a>
-                  </h5>
-                  <div class="text">
-                    Excellent Housing for Foreign Students in the UK: Safe,
-                    Practical, and Wide-Ranging Selections in London and Across.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/6161033_2350.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Partime Assist</a>
-                  </h5>
-                  <div class="text">
-                    Discover London, Get a Part-Time Job with Arrange a Pastime
-                    Job—A World-Class City with a thriving nightlife.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/12291285_Startup managers presenting and analyzing sales growth chart.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>Financial Assist</a>
-                  </h5>
-                  <div class="text">
-                    Financial Relief Made Accessible: The Secure and
-                    Low-Interest Finance Support Service for Short-Term Living
-                    Expenses.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/23306556_1911.i305.029.P.m005.c20.lawyer justice law set-09.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a
-                      >Work Permit Conversion</a
-                    >
-                  </h5>
-                  <div class="text">
-                    With Our Assistance, Convert to a Skilled Worker Visa -
-                    Children and Partners May Apply Separately or Concurrently.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Service Block -->
-            <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-              <div class="inner-box">
-                <div class="image-box">
-                  <figure class="image">
-                    <a
-                      ><img
-                        style="height: 230px"
-                        src="images/background/dad-son-standing-counter-airport_74855-10574.jpg"
-                        alt=""
-                    /></a>
-                  </figure>
-                  <div class="icon-box"><i class="icon fa fa-school"></i></div>
-                </div>
-                <div class="content-box">
-                  <h5 class="title">
-                    <a>PR Assist</a>
-                  </h5>
-                  <div class="text">
-                    Obtain Permanent Residency in the UK, Only for Those Without
-                    a Natural Right to Reside There.
-                  </div>
-                  <!-- <a class="read-more"
-                    >Read More <i class="fa fa-long-arrow-alt-right"></i
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Services Section-->
-
-      <!-- Why Choose Us Three -->
-      <section class="why-choose-us-three">
-        <div class="anim-icons">
-          <span class="icon icon-object-1"></span>
-        </div>
-        <div class="auto-container">
-          <div class="row">
-            <!-- Content Column -->
-            <div class="content-column col-lg-6 col-md-12">
-              <div class="inner-column wow fadeInRight">
-                <div class="sec-title">
-                  <i class="sub-title">/ Why Aim Britz?</i>
-                  <h2>Your Ultimate Study Abroad Guide</h2>
-                  <div class="bold-text">
-                    Aim Britz is one of the top Study Abroad consultants in
-                    Kerala that guides and consults students all around the
-                    globe. We offer a great opportunity for students to study in
-                    UK without ILETS and with low tuition fees.
-                  </div>
-                  <div class="text">
-                    Your #1 Global Education Handbook for Life-Changing Academic
-                    Experiences
-                  </div>
-                </div>
-                <ul class="list-style-three two-column">
-                  <li>Consultations with experts.</li>
-                  <li>Excellence in Personalised Guidance.</li>
-                  <li>Demonstrated Success History.</li>
-                  <li>Focused on Placement in UK Universities.</li>
-                </ul>
-                <a href="page-about.html" class="theme-btn btn-style-one"
-                  ><span class="btn-title">Explore now</span></a
-                >
-              </div>
-            </div>
-            <!-- Image Column -->
-            <div class="image-column col-lg-6 col-md-12 col-sm-12">
-              <div class="inner-column">
-                <div class="image-box">
-                  <figure class="bg-image">
-                    <img src="https://via.placeholder.com/532x544" alt="" />
-                  </figure>
-                  <figure class="image">
-                    <img src="images/background/13561931_5274708.jpg" alt="" />
-                  </figure>
-                  <div class="info-box">
-                    <i class="icon flaticon-licensing"></i>
-                    <span class="count">1000+</span>
-                    <div class="text">
-                      We Process Student Visa’s only in 20 Days
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="banner-box-three">
-            <div class="inner-box">
-              <div class="title-column">
-                <figure class="image">
-                  <img src="images/icons/g3.png" alt="" />
-                </figure>
-                <h3 class="title">
-                  Asia’s First in Asia Book of Records and India Book of Records
-                </h3>
-              </div>
-              <div class="text-column">
-                <div class="text">
-                  Creating a Revolutionary Step in the Field of Educational
-                  Consulting and Being Listed in the Asia and India Books of
-                  Records
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Why Choose Us -->
-      <!-- Fun Fact Section Two -->
-      <section class="fun-fact-section-two">
-        <div class="auto-container">
-          <div class="fact-counter pull-up">
-            <div class="row">
-              <!-- Counter block Two-->
-              <div
-                class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
-              >
-                <div class="inner">
-                  <i class="icon flaticon-passport-16"></i>
-                  <div class="count-box">
-                    <span class="count-text" data-speed="3000" data-stop="100"
-                      >0</span
-                    >+
-                  </div>
-                  <h6 class="counter-title">
-                    Universities & Institutes Tie-ups
-                  </h6>
-                </div>
-              </div>
-
-              <!--Counter block Two-->
-              <div
-                class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div class="inner">
-                  <i class="icon flaticon-group"></i>
-                  <div class="count-box">
-                    <span class="count-text" data-speed="3000" data-stop="100"
-                      >0</span
-                    >+
-                  </div>
-                  <h6 class="counter-title">
-                    Registered students for next intake
-                  </h6>
-                </div>
-              </div>
-
-              <!--Counter block Two-->
-              <div
-                class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
-                data-wow-delay="600ms"
-              >
-                <div class="inner">
-                  <i class="icon flaticon-life-insurance"></i>
-                  <div class="count-box">
-                    <span class="count-text" data-speed="3000" data-stop="1000"
-                      >1000</span
-                    >+
-                  </div>
-                  <h6 class="counter-title">Satisfied students</h6>
-                </div>
-              </div>
-
-              <!--Counter block Two-->
-              <div
-                class="counter-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
-                data-wow-delay="900ms"
-              >
-                <div class="inner">
-                  <i class="icon flaticon-cooperation"></i>
-                  <div class="count-box">
-                    <span class="count-text" data-speed="3000" data-stop="5"
-                      >0</span
-                    >*
-                  </div>
-                  <h6 class="counter-title">Rated on social media</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Testimonial Section Three-->
-      <section class="testimonial-section-three">
-        <div class="bg-layer"></div>
-        <div class="auto-container">
-          <div class="row">
-            <div class="title-column col-lg-4 col-md-12">
-              <div class="sec-title">
-                <span class="sub-title">Our testimonials</span>
-                <h2>What Our Students Say.</h2>
-              </div>
-            </div>
-            <div class="testimonial-column col-lg-8 col-md-12">
-              <div class="carousel-outer">
-                <div class="testimonial-carousel-two owl-carousel owl-theme">
-                  <!-- Testimonial Block Three -->
-                  <div class="testimonial-block-three">
-                    <div class="inner-box">
-                      <div class="image-box">
-                        <figure class="image">
-                          <img
-                            src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.50-PM-92x92-1.jpeg"
-                            alt=""
-                          />
-                        </figure>
-                      </div>
-                      <div class="content-box">
-                        <div class="text">
-                          Aimbritz help me out to get into my dream building
-                        </div>
-                        <div class="info-box">
-                          <h5 class="name">Aiswarya S Nair</h5>
-                          <span class="designation"
-                            >University of Huddersfield</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial Block Three -->
-                  <div class="testimonial-block-three">
-                    <div class="inner-box">
-                      <div class="image-box">
-                        <figure class="image">
-                          <img
-                            src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.50-PM-1-92x92-1.jpeg"
-                            alt=""
-                          />
-                        </figure>
-                      </div>
-                      <div class="content-box">
-                        <div class="text">
-                          It was a great journey with AimBritz throughout my
-                          admission process
-                        </div>
-                        <div class="info-box">
-                          <h5 class="name">Mohammed Ashik</h5>
-                          <span class="designation"
-                            >University of aTeeside</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial Block Three -->
-                  <div class="testimonial-block-three">
-                    <div class="inner-box">
-                      <div class="image-box">
-                        <figure class="image">
-                          <img
-                            src="images/testimonials/WhatsApp-Image-2021-03-11-at-6.16.51-PM-92x92-1.jpeg"
-                            alt=""
-                          />
-                        </figure>
-                      </div>
-                      <div class="content-box">
-                        <div class="text">
-                          AimBritz helped us in finding partimes and
-                          accommodation even though we are not their candidates.
-                        </div>
-                        <div class="info-box">
-                          <h5 class="name">Aleena Ashok and friends Burnel</h5>
-                          <span class="designation">UK</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial Block Three -->
-                  <div class="testimonial-block-three">
-                    <div class="inner-box">
-                      <div class="image-box">
-                        <figure class="image">
-                          <img
-                            src="images/testimonials/WhatsApp Image 2024-02-06 at 12.05.42 PM 12.55.17 PM.jpeg"
-                            alt=""
-                          />
-                        </figure>
-                      </div>
-                      <div class="content-box">
-                        <div class="text">
-                          Completed MBA in project management at UEL. Excellent support from AimBritz team. Highly recommend for educational goals.
-                        </div>
-                        <div class="info-box">
-                          <h5 class="name">OLEENA JOS CHIRAMMEL</h5>
-                          <span class="designation">UK</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Clients Section -->
-      <section class="clients-section style-three">
-        <div class="auto-container">
-          <!-- Sponsors Outer -->
-          <div class="sponsors-outer">
-            <!--clients carousel-->
-            <ul class="clients-carousel owl-carousel owl-theme">
-              <li class="slide-item">
-                <img src="images/university/DMU-Logo_847x300_acf_cropped.jpg" alt="" />
-              </li>
-              <li class="slide-item">
-                <img src="images/university/E4BA-5D49-44C5-8A32-856E-1024x535.png" alt="" />
-              </li>
-              <li class="slide-item">
-                <img src="images/university/PR2-1024x359.jpg" alt="" />
-              </li>
-              <li class="slide-item">
-                <img src="images/university/Teesside-University-logo.jpg" alt="" />
-              </li>
-              <li class="slide-item">
-                <img src="images/university/University-of-Greenwich-logo.jpg" alt="" />
-              </li>
-              <li class="slide-item">
-                <img src="images/university/uws-1024x576.jpg" alt="" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!--End Clients Section -->
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <div class="auto-container">
-          <div class="upper-box">
-            <div class="logo">
-              <a href="index.html"><img src="images/aimbritz-logo.png" style="width: 150px;" alt="" /></a>
-            </div>
-            <div class="subscribe-form">
-              <h5 class="title">Subscribe to Newsletter</h5>
-              <form method="post" action="#">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    class="email"
-                    value=""
-                    placeholder="Email Address"
-                    required=""
-                  />
-                  <button type="button" class="theme-btn btn-style-one">
-                    <span class="btn-title">Subscribe</span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!--Widgets Section-->
-        <div class="widgets-section">
-          <div class="auto-container">
-            <div class="row">
-              <!--Footer Column-->
-              <div class="footer-column col-xl-3 col-lg-4">
-                <div class="footer-widget about-widget">
-                  <h5 class="widget-title">Our Offices</h5>
-                  <div class="text">
-                    Aim Britz Study Abroad 323 Annas Arcade, Trivandrum , 695001, +919747277233
-                  </div>
-                  <div class="text">
-                    Aim Britz Study Abroad 3rd floor, BIFA Towers, Koonamthai,
-                    Edappaly, Kochi, +918877889942
-                  </div>
-                  <div class="text">
-                    Aim Britz Study Abroad 43 High Street, London, UK, +447417391291
-                  </div>
-                  <ul class="contact-info">
-                    <li>
-                      <i class="fa fa-envelope"></i>
-                      <a href="mailto:needhelp@potisen.com">info@aimbritz.com</a
-                      ><br />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--Footer Column-->
-              <div class="footer-column col-xl-6 col-lg-8 col-md-12 mb-0">
-                <div class="footer-widget links-widget">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <h5 class="widget-title">Explore</h5>
-                      <ul class="user-links">
-                        <li><a href="/page-about.html">About Company</a></li>
-                        <li><a href="/page-team.html">Meet the Team</a></li>
-                        <li><a href="/page-contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <h5 class="widget-title">Visa</h5>
-                      <ul class="user-links">
-                        <li><a href="#">Students Visa</a></li>
-                        <li><a href="#">Spouse Visa</a></li>
-                        <li><a href="#">Travel Visa</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <h5 class="widget-title">Services</h5>
-                      <ul class="user-links">
-                        <li><a href="#">PR Applicants</a></li>
-                        <li><a href="#">Visa Consultancy</a></li>
-                        <li><a href="#">Travel Insurance</a></li>
-                        <li><a href="#">Abroad Study</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--Footer Column-->
-              <div class="footer-column col-xl-3 col-lg-4 col-md-6">
-                <div class="footer-widget gallery-widget">
-                  <h5 class="widget-title">Gallery</h5>
-                  <div class="widget-content">
-                    <div class="outer clearfix">
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                      <figure class="image">
-                        <a href="#"
-                          ><img src="https://via.placeholder.com/80x80" alt=""
-                        /></a>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Footer Bottom-->
-        <div class="footer-bottom">
-          <div class="auto-container">
-            <div class="inner-container">
-              <div class="copyright-text">
-                &copy; Copyright 2023 by <a href="index.html">Company.com</a>
-              </div>
-              <ul class="social-icon-two">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-pinterest"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!--End Main Footer -->
-	
+      </div>
+    </div>
     <!-- End Page Wrapper -->
     <!-- Scroll To Top -->
     <div class="scroll-to-top scroll-to-target" data-target="html">
@@ -1466,5 +1397,6 @@
     <script src="js/owl.js"></script>
     <script src="js/script.js"></script>
     <script src="js/pop-up.js"></script>
-  </body>
+</body>
+
 </html>

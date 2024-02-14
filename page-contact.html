@@ -214,7 +214,7 @@
               <h2>Feel free to write</h2>
             </div>
             <!-- Contact Form -->
-            <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+            <form id="gform" name="gform" class="" method="post">
               <div class="row">
                 <div class="col-sm-6">
                   <div class="mb-3">
@@ -487,33 +487,25 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.form.min.js"></script>
   <script>
-    (function ($) {
-      $("#contact_form").validate({
-        submitHandler: function (form) {
-          var form_btn = $(form).find('button[type="submit"]');
-          var form_result_div = "#form-result";
-          $(form_result_div).remove();
-          form_btn.before(
-            '<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>'
-          );
-          var form_btn_old_msg = form_btn.html();
-          form_btn.html(form_btn.prop("disabled", true).data("loading-text"));
-          $(form).ajaxSubmit({
-            dataType: "json",
-            success: function (data) {
-              if (data.status == "true") {
-                $(form).find(".form-control").val("");
-              }
-              form_btn.prop("disabled", false).html(form_btn_old_msg);
-              $(form_result_div).html(data.message).fadeIn("slow");
-              setTimeout(function () {
-                $(form_result_div).fadeOut("slow");
-              }, 6000);
-            },
-          });
-        },
-      });
-    })(jQuery);
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzbY9LB0kYjAZz5UK9U5ufl7SU-nzWcSO8k9yoLxg3bDjezZNQqBRrBT0oCDYrWGcAGTA/exec'
+
+    const form = document.forms['gform']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(async (response) => {
+          console.log(await response.json());
+          const resp = await response.json()
+          if(resp.status){
+            alert("Thank you! your form is submitted successfully.");
+          }else{
+            alert("Error.");
+          }
+        })
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 
