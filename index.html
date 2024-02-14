@@ -7,7 +7,6 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
-  <link href="css/pop-up.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="icon" href="images/favicon.png" type="image/x-icon" />
@@ -1307,12 +1306,12 @@
       </div>
     </footer>
     <!--End Main Footer -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
       data-bs-whatever="@mdo">Open modal for @mdo</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModallg"
       data-bs-whatever="@fat">Open modal for @fat</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-      data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+      data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1397,6 +1396,12 @@
     <script src="js/owl.js"></script>
     <script src="js/script.js"></script>
     <script src="js/pop-up.js"></script>
+    <script>
+      // Function to show the modal after a 2-second timeout
+      setTimeout(function() {
+        $('#exampleModallg').modal('show');
+      }, 3000); // 2000 milliseconds = 2 seconds
+    </script>
 </body>
 
 </html>
